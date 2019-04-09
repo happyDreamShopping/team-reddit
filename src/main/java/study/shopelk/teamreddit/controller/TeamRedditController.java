@@ -23,14 +23,14 @@ public class TeamRedditController {
     @GetMapping("/health")
     public String health() {
         String timestamp = LocalDateTime.now().format(DateTimeFormatter.ISO_DATE_TIME);
-        log.info("Current Timestamp: {}", timestamp);
+//        log.info("Current Timestamp: {}", timestamp);
         return timestamp;
     }
 
     @ResponseBody
     @RequestMapping(value = "/search", method = RequestMethod.POST)
     public String search(@RequestParam("author") String author) {
-        log.info("Author: {}", author);
+//        log.info("Author: {}", author);
 
         // search
 
